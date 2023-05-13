@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+p {
+    text-indent: 30px;
+}
+/* BTN CONTACT NOW */
+.section__btn-contact {
+	width:45px;
+	display:flex;
+	flex-wrap:wrap;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1000;
+	
+}
+.btn__contact-item{
+	width:45px;
+	height:45px;
+	margin:10px 0px;
+	background:transparent;
+	box-shadow:1px 1px 15px gray;
+	border-radius:50%;
+	overflow:hidden;
+	background-color:#edededc4;
+	
+}
+.btn__contact-item a{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.btn__contact-item img{
+	width:80%;
+	height:80%;
+	object-fit:cover;
+}
+.btn-callnow{
+	animation:callnow 0.2s infinite alternate;
+	
+}
+@keyframes callnow{
+	0%{
+		transform: rotate(160deg);
+	}
+	100%{
+		transform: rotate(200deg);
+	}
+	
+}
+/* END */
+@media screen and (max-width:768px){
+.section__btn-contact {
+    bottom: 10px;
+}
+}
